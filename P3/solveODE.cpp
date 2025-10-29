@@ -9,13 +9,15 @@ double f(const double& y, const double& t){
 
 int main(){
 	
-	double	y0 = 1.0;
+	double y0 = 1.0;
 	std::vector<double> y_vec;
 	y_vec.push_back(y0);
 	
 	double time_horizon = 10.0;
 	double dt = 0.001;
 	double num_time_steps = time_horizon / dt;
+
+	
 	
 	for (int i = 0; i <= num_time_steps; i++){
 		double t = i*dt;
